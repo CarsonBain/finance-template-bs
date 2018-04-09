@@ -1,6 +1,5 @@
 $(function() {
-  //initialize wow.js
-  new WOW().init();
+
   //insert description text under first section
   var descText = "Are your assets working for you? Meet with us to find out.";
   var button = '<button type="button" class="btn btn-primary btn-lg">Lets Talk</button>';

@@ -1,0 +1,22 @@
+/*---------my variables---------------*/
+/*text*/
+$font-family-serif: 'Frank Ruhl Libre', serif;
+$font-family-sans-serif: 'Karla', sans-serif;
+
+/*shadows*/
+$material-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+$material-box-shadow-hov: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+
+/*colors*/
+$green:   #74b876;
+$blue:    #596c79;
+$purple:  #604484;
+$orange:  #f0af35;
+$red:     #f15555;
+
+
+
+/*------import bootstrap styles-----------*/
+@import "../node_modules/bootstrap/scss/bootstrap";
+/*--------my base styles-------------*/
+@import "../scss/_base.scss";

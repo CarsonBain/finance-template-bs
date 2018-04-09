@@ -1,0 +1,181 @@
+/*--General--*/
+section {
+  padding: 24px 0;
+&.alt {
+    background-color: $gray-200;
+}
+&:first-of-type {
+  padding: 0;
+}
+}
+body.animated.fadeIn {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+.container-fluid {
+  max-width: 1280px;
+}
+
+/*--Text--*/
+h1, h2, h3, h4 {
+  font-family: $font-family-serif;
+  font-weight: $font-weight-light;
+}
+h5, h6 {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+}
+.material-icons {
+
+  &.large {
+    font-size: $display2-size;
+}
+}
+a {
+  &.text-uppercase {
+    letter-spacing: 0.02em;
+  }
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: $gray-400;
+  margin: 16px auto;
+}
+.green {
+  color: $green;
+}
+.blue {
+  color: $blue;
+}
+.purple {
+  color: $purple;
+}
+.orange {
+  color: $orange;
+}
+.red {
+  color: $red;
+}
+.white {
+  color: $white;
+}
+/*--Buttons--*/
+input, button, select, optgroup, textarea {
+  font-family: $font-family-sans-serif;
+}
+button.btn {
+  text-transform: uppercase;
+      box-shadow: $material-box-shadow;
+}
+button.btn:hover {
+  box-shadow: $material-box-shadow-hov;
+}
+
+/*--Carousel--*/
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+
+  h2 {
+    font-size: 4rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 3rem;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 2.25rem;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.15rem;
+    }
+  }
+  .line {
+    background-color: $white;
+    margin: 24px auto;
+  }
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.4);
+}
+/*--Main Content--*/
+/*--services section--*/
+.card {
+  box-shadow: $material-box-shadow;
+  transition: all 0.15s ease;
+  border: none;
+
+  @include media-breakpoint-up(lg) {
+    .media {
+      display: block;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .media {
+      display: block;
+    }
+  }
+  @include media-breakpoint-between(sm,md) {
+    .material-icons.space-right {
+      margin-right: 16px;
+    }
+  }
+}
+.card:hover {
+  box-shadow: $material-box-shadow-hov;
+}
+
+/*--video and accordion section--*/
+
+#accordion {
+
+.card-header {
+  &[aria-expanded="true"] {
+    background-color: $blue;
+
+    h5 {
+      color: $white;
+
+    i.plus {
+      display: none;
+    }
+    }
+  }
+  &[aria-expanded="false"] {
+    i.minus {
+      display: none;
+    }
+    }
+
+&:hover {
+  cursor: pointer;
+}
+}
+}
+#accordion .card:hover {
+  box-shadow: $material-box-shadow;
+}
+
+/*--footer--*/
+footer {
+  min-height: 80px;
+  background-color: $gray-400;
+}

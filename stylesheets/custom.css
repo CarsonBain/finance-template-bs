@@ -8277,6 +8277,10 @@ button.btn:hover {
 }
 
 /*--video and accordion section--*/
+#accordion .card-header {
+  cursor: pointer;
+}
+
 #accordion .card-header[aria-expanded="true"] {
   background-color: #596c79;
 }
@@ -8291,10 +8295,6 @@ button.btn:hover {
 
 #accordion .card-header[aria-expanded="false"] i.minus {
   display: none;
-}
-
-#accordion .card-header:hover {
-  cursor: pointer;
 }
 
 #accordion .card:hover {

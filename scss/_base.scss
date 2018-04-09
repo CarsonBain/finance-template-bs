@@ -148,6 +148,8 @@ button.btn:hover {
 #accordion {
 
 .card-header {
+  cursor: pointer;
+
   &[aria-expanded="true"] {
     background-color: $blue;
 
@@ -164,10 +166,6 @@ button.btn:hover {
       display: none;
     }
     }
-
-&:hover {
-  cursor: pointer;
-}
 }
 }
 #accordion .card:hover {
